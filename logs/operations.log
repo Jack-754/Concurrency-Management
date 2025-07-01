@@ -1,0 +1,148 @@
+[Tue Jul  1 10:36:43 2025] Thread 130994185172544 acquired SHARED lock on resource1
+[Tue Jul  1 10:36:43 2025] Thread 130994176779840 acquired SHARED lock on resource3
+[Tue Jul  1 10:36:44 2025] Thread 130994185172544 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 10:36:44 2025] Thread 130994176779840 released SHARED lock on resource3
+[Tue Jul  1 10:36:45 2025] Thread 130994185172544 released SHARED lock on resource1
+[Tue Jul  1 10:36:45 2025] Thread 130994185172544 released EXCLUSIVE lock on resource2
+[Tue Jul  1 10:36:45 2025] Thread 130994176779840 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 10:57:33 2025] Thread 126138122757696 acquired SHARED lock on resource3
+[Tue Jul  1 10:57:33 2025] Thread 126138131150400 acquired SHARED lock on resource1
+[Tue Jul  1 10:57:34 2025] Thread 126138122757696 released SHARED lock on resource3
+[Tue Jul  1 10:57:34 2025] Thread 126138131150400 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 10:57:35 2025] Thread 126138122757696 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 10:57:35 2025] Thread 126138131150400 released SHARED lock on resource1
+[Tue Jul  1 10:57:35 2025] Thread 126138131150400 released EXCLUSIVE lock on resource2
+[Tue Jul  1 10:58:28 2025] Thread 127338891179584 acquired SHARED lock on resource1
+[Tue Jul  1 10:58:28 2025] Thread 127338882786880 acquired SHARED lock on resource3
+[Tue Jul  1 10:58:29 2025] Thread 127338891179584 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 10:58:29 2025] Thread 127338882786880 released SHARED lock on resource3
+[Tue Jul  1 10:58:30 2025] Thread 127338891179584 released SHARED lock on resource1
+[Tue Jul  1 10:58:30 2025] Thread 127338891179584 released EXCLUSIVE lock on resource2
+[Tue Jul  1 10:58:30 2025] Thread 127338882786880 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 11:29:47 2025] Thread 123794284869184 acquired SHARED lock on resource1
+[Tue Jul  1 11:29:47 2025] Thread 123794276476480 acquired SHARED lock on resource3
+[Tue Jul  1 11:29:48 2025] Thread 123794284869184 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:29:48 2025] Thread 123794276476480 released SHARED lock on resource3
+[Tue Jul  1 11:29:49 2025] Thread 123794284869184 released SHARED lock on resource1
+[Tue Jul  1 11:29:49 2025] Thread 123794276476480 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 11:29:49 2025] Thread 123794284869184 released EXCLUSIVE lock on resource2
+[Tue Jul  1 11:31:59 2025] Thread 134810192311872 acquired SHARED lock on resource1
+[Tue Jul  1 11:31:59 2025] Thread 134810183919168 acquired SHARED lock on resource3
+[Tue Jul  1 11:32:00 2025] Thread 134810192311872 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:32:00 2025] Thread 134810183919168 released SHARED lock on resource3
+[Tue Jul  1 11:32:00 2025] 134810183919168 resource3
+
+[Tue Jul  1 11:32:01 2025] Thread 134810192311872 released SHARED lock on resource1
+[Tue Jul  1 11:32:01 2025] 134810192311872 resource1
+
+[Tue Jul  1 11:32:01 2025] Thread 134810183919168 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 11:32:01 2025] Thread 134810192311872 released EXCLUSIVE lock on resource2
+[Tue Jul  1 11:32:01 2025] 134810192311872 resource2
+
+[Tue Jul  1 11:33:35 2025] 0 127545286587968
+
+[Tue Jul  1 11:33:35 2025] Thread 127545286587968 acquired SHARED lock on resource1
+[Tue Jul  1 11:33:35 2025] 0 127545278195264
+
+[Tue Jul  1 11:33:35 2025] Thread 127545278195264 acquired SHARED lock on resource3
+[Tue Jul  1 11:33:36 2025] Thread 127545278195264 released SHARED lock on resource3
+[Tue Jul  1 11:33:36 2025] 127545278195264 resource3
+
+[Tue Jul  1 11:33:36 2025] 0 127545286587968
+
+[Tue Jul  1 11:33:36 2025] Thread 127545286587968 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:33:37 2025] 0 127545278195264
+
+[Tue Jul  1 11:33:37 2025] Thread 127545286587968 released SHARED lock on resource1
+[Tue Jul  1 11:33:37 2025] 127545286587968 resource1
+
+[Tue Jul  1 11:33:37 2025] Thread 127545278195264 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 11:33:37 2025] Thread 127545286587968 released EXCLUSIVE lock on resource2
+[Tue Jul  1 11:33:37 2025] 127545286587968 resource2
+
+[Tue Jul  1 11:39:34 2025] 0 126179315021376
+
+[Tue Jul  1 11:39:34 2025] Thread 126179315021376 acquired SHARED lock on resource1
+[Tue Jul  1 11:39:34 2025] 0 126179306628672
+
+[Tue Jul  1 11:39:34 2025] Thread 126179306628672 acquired SHARED lock on resource3
+[Tue Jul  1 11:39:35 2025] 0 126179315021376
+
+[Tue Jul  1 11:39:35 2025] Thread 126179306628672 released SHARED lock on resource3
+[Tue Jul  1 11:39:35 2025] 126179306628672 resource3
+
+[Tue Jul  1 11:39:35 2025] Thread 126179315021376 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:39:36 2025] 0 126179306628672
+
+[Tue Jul  1 11:39:36 2025] Thread 126179315021376 released SHARED lock on resource1
+[Tue Jul  1 11:39:36 2025] 126179315021376 resource1
+
+[Tue Jul  1 11:39:36 2025] Thread 126179306628672 acquired EXCLUSIVE lock on resource4
+[Tue Jul  1 11:39:36 2025] Thread 126179315021376 released EXCLUSIVE lock on resource2
+[Tue Jul  1 11:39:36 2025] 126179315021376 resource2
+
+[Tue Jul  1 11:40:36 2025] 0 124491468371520
+
+[Tue Jul  1 11:40:36 2025] Thread 124491468371520 acquired SHARED lock on resource1
+[Tue Jul  1 11:40:36 2025] 0 124491459978816
+
+[Tue Jul  1 11:40:36 2025] Thread 124491459978816 acquired SHARED lock on resource3
+[Tue Jul  1 11:40:37 2025] 0 124491468371520
+
+[Tue Jul  1 11:40:37 2025] Thread 124491459978816 released SHARED lock on resource3
+[Tue Jul  1 11:40:37 2025] 124491459978816 resource3
+
+[Tue Jul  1 11:40:37 2025] Thread 124491468371520 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:40:38 2025] 1 124491459978816
+
+[Tue Jul  1 11:40:38 2025] Thread 124491459978816 violated 2PL by acquiring resource4
+[Tue Jul  1 11:40:38 2025] Thread 124491468371520 released SHARED lock on resource1
+[Tue Jul  1 11:40:38 2025] 124491468371520 resource1
+
+[Tue Jul  1 11:40:38 2025] Thread 124491468371520 released EXCLUSIVE lock on resource2
+[Tue Jul  1 11:40:38 2025] 124491468371520 resource2
+
+[Tue Jul  1 11:41:05 2025] Thread 128152670037568 acquired SHARED lock on resource3
+[Tue Jul  1 11:41:05 2025] Thread 128152678430272 acquired SHARED lock on resource1
+[Tue Jul  1 11:41:06 2025] Thread 128152670037568 released SHARED lock on resource3
+[Tue Jul  1 11:41:06 2025] Thread 128152678430272 acquired EXCLUSIVE lock on resource2
+[Tue Jul  1 11:41:07 2025] Thread 128152670037568 violated 2PL by acquiring resource4
+[Tue Jul  1 11:41:07 2025] Thread 128152678430272 released SHARED lock on resource1
+[Tue Jul  1 11:41:07 2025] Thread 128152678430272 released EXCLUSIVE lock on resource2
+[Tue Jul  1 17:36:59 2025] Edge added: A -> B
+[Tue Jul  1 17:36:59 2025] Edge added: A -> C
+[Tue Jul  1 17:36:59 2025] Edge added: B -> D
+[Tue Jul  1 17:36:59 2025] Cycle detected
+[Tue Jul  1 17:36:59 2025] Thread 129883525084736 acquired EXCLUSIVE lock on A
+[Tue Jul  1 17:37:00 2025] Cycle detected
+[Tue Jul  1 17:37:00 2025] Thread 129883516692032 acquired EXCLUSIVE lock on C
+[Tue Jul  1 17:37:00 2025] Cycle detected
+[Tue Jul  1 17:37:00 2025] Thread 129883525084736 acquired EXCLUSIVE lock on B
+[Tue Jul  1 17:37:01 2025] Cycle detected
+[Tue Jul  1 17:37:01 2025] Thread 129883434907200 waiting for EXCLUSIVE lock on A
+[Tue Jul  1 17:37:01 2025] Thread 129883516692032 cannot lock D without holding its parent.
+[Tue Jul  1 17:37:01 2025] Thread 129883516692032 released EXCLUSIVE lock on C
+[Tue Jul  1 17:37:01 2025] Cycle detected
+[Tue Jul  1 17:37:01 2025] Thread 129883525084736 acquired EXCLUSIVE lock on D
+[Tue Jul  1 17:37:02 2025] Thread 129883525084736 released EXCLUSIVE lock on B
+[Tue Jul  1 17:37:02 2025] Thread 129883525084736 released EXCLUSIVE lock on D
+[Tue Jul  1 17:37:02 2025] Thread 129883525084736 released EXCLUSIVE lock on A
+[Tue Jul  1 17:37:02 2025] Thread 129883434907200 acquired EXCLUSIVE lock on A
+[Tue Jul  1 17:37:03 2025] Thread 129883434907200 released EXCLUSIVE lock on A
+[Tue Jul  1 17:37:04 2025] Thread 129883434907200 cannot re-lock A after release.
+[Tue Jul  1 17:38:30 2025] Edge added: A -> B
+[Tue Jul  1 17:38:30 2025] Edge added: A -> C
+[Tue Jul  1 17:38:30 2025] Edge added: B -> D
+[Tue Jul  1 17:38:30 2025] Thread 134990278948416 acquired EXCLUSIVE lock on A
+[Tue Jul  1 17:38:31 2025] Thread 134990270555712 acquired EXCLUSIVE lock on C
+[Tue Jul  1 17:38:31 2025] Thread 134990278948416 acquired EXCLUSIVE lock on B
+[Tue Jul  1 17:38:32 2025] Thread 134990270555712 cannot lock D without holding its parent.
+[Tue Jul  1 17:38:32 2025] Thread 134990270555712 released EXCLUSIVE lock on C
+[Tue Jul  1 17:38:32 2025] Thread 134990262163008 waiting for EXCLUSIVE lock on A
+[Tue Jul  1 17:38:32 2025] Thread 134990278948416 acquired EXCLUSIVE lock on D
+[Tue Jul  1 17:38:33 2025] Thread 134990278948416 released EXCLUSIVE lock on B
+[Tue Jul  1 17:38:33 2025] Thread 134990278948416 released EXCLUSIVE lock on D
+[Tue Jul  1 17:38:33 2025] Thread 134990278948416 released EXCLUSIVE lock on A
+[Tue Jul  1 17:38:33 2025] Thread 134990262163008 acquired EXCLUSIVE lock on A
+[Tue Jul  1 17:38:34 2025] Thread 134990262163008 released EXCLUSIVE lock on A
+[Tue Jul  1 17:38:35 2025] Thread 134990262163008 cannot re-lock A after release.

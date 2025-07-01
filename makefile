@@ -1,36 +1,21 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -g
-OBJECTS = main.o Logger.o LockManager.o TransactionManager.o RAG.o
-TREE_OBJECT = TreeProtocol.o
+CXXFLAGS = -Wall -pthread -std=c++11
 
-TARGET = concurrency_manager
+# Source files
+SRCS = LockManager.cpp rag.cpp Logger.cpp 2PLManager.cpp TreeLockManager.cpp treelock_test.cpp
+OBJS = $(SRCS:.cpp=.o)
 
-# If tree protocol is used, uncomment the line below
-# OBJECTS += $(TREE_OBJECT)
+# Output executable
+TARGET = lock_test
 
 all: $(TARGET)
 
-$(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
-main.o: main.cpp
-	$(CXX) $(CXXFLAGS) -c main.cpp
-
-Logger.o: Logger.cpp Logger.h
-	$(CXX) $(CXXFLAGS) -c Logger.cpp
-
-LockManager.o: LockManager.cpp LockManager.h
-	$(CXX) $(CXXFLAGS) -c LockManager.cpp
-
-TransactionManager.o: TransactionManager.cpp TransactionManager.h
-	$(CXX) $(CXXFLAGS) -c TransactionManager.cpp
-
-RAG.o: RAG.cpp RAG.h
-	$(CXX) $(CXXFLAGS) -c RAG.cpp
-
-TreeProtocol.o: TreeProtocol.cpp TreeProtocol.h
-	$(CXX) $(CXXFLAGS) -c TreeProtocol.cpp
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f *.o $(TARGET)
-	rm -f logs/operations.log
+	rm -f $(OBJS) $(TARGET) lock_manager.log
+

@@ -1,30 +1,50 @@
-#ifndef LOCKMANAGER_H
-#define LOCKMANAGER_H
+#ifndef LOCK_MANAGER_H
+#define LOCK_MANAGER_H
 
 #include <string>
-#include <unordered_map>
-#include <unordered_set>
+#include <map>
 #include <queue>
 #include <pthread.h>
+#include "rag.h"
+#include "Logger.h"
+
 
 enum LockType { SHARED, EXCLUSIVE };
 
 class LockManager {
 public:
-    static void init();
-    void acquireLock(const std::string& txnId, const std::string& resource, LockType type);
-    void releaseLock(const std::string& txnId, const std::string& resource);
+    LockManager();
+    ~LockManager();
+
+    void lockResource(const std::string& resName, LockType type);
+    void unlockResource(const std::string& resName);
 
 private:
-    struct LockInfo {
-        LockType type;
-        std::unordered_set<std::string> holders;
-        std::queue<std::pair<std::string, LockType>> waitingQueue;
+    RAG rag;
+
+    struct Waiter {
+        pthread_t thread;
+        LockType lockType;
+        pthread_cond_t cond;
+        bool granted;
+
+        Waiter(pthread_t t, LockType lt);
     };
 
-    static pthread_mutex_t mutex;
-    static pthread_cond_t cond;
-    std::unordered_map<std::string, LockInfo> lockTable;
+    struct Resource {
+        pthread_mutex_t mutex;
+        int sharedCount;
+        bool exclusiveHeld;
+        std::queue<Waiter*> waitQueue;
+
+        Resource();
+        ~Resource();
+    };
+
+    std::map<std::string, Resource*> resourceTable;
+    pthread_mutex_t globalMutex;
+
+    void tryGrantLocks(Resource* res);
 };
 
-#endif
+#endif // LOCK_MANAGER_H
